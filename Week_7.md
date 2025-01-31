@@ -30,5 +30,7 @@ Net user alex Ilovesales123! /add
 Net user andrew Ilovedevelopment123! /add
 Net localgroup administrators andrew /add
 Net user andrew
-Net accounts - after changing in gpedit
+Net accounts
 ```
+We will use gpedit to edit our group priviledges. We added password complexity, a minimum length of 12 characters, and a maximum age of 90 days.\
+![image](https://github.com/Tapjelly/Windows_Labs/blob/images/Week7_image1.png)
