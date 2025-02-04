@@ -32,3 +32,17 @@ Net localgroup administrators andrew /add
 Net user andrew
 Net accounts - after changing in gpedit
 ```
+
+# Week 7.2
+## Move and Create Directories
+```console
+Set-Location c:\
+move-item -path "c:\users\alex\desktop\contracts" -destination "c:\"
+New-item "Logs", "Backups", "Scripts" -itemtype "directoy" -force
+rename-item -path "c:\contracts" -newname "Contracts"
+Get-childitem
+```
+## Generating Windows Event Log Files with Parameters and Pipelines
+```console
+
+```
