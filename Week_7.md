@@ -49,6 +49,17 @@ get-winevent -logname application -maxevents 100 | convertto-json | out-file -fi
 ```
 
 ## Removing Unnecessary Packages with PowerShell
+We will use windows powershell ISE to edit our script
 ```console
-
+Set-Location C:\Users\azadmin\Documents\Activity\choco\
+Get-childitem
+./removepackages.ps1
+```
+**removepackages.ps1**
+```console
+$csv = Import-Csv -path .\chocoactivity.csv
+foreach ($package in $csv) {
+	choco uninstall -y $package.name
+	write-output $package.name removed!
+}
 ```
