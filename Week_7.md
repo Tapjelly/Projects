@@ -44,5 +44,11 @@ Get-childitem
 ```
 ## Generating Windows Event Log Files with Parameters and Pipelines
 ```console
+get-winevent -logname security -maxevents 100 | convertto-json | out-file -filepath "c:\logs\RecentSecurityLogs.json"
+get-winevent -logname application -maxevents 100 | convertto-json | out-file -filepath "c:\logs\RecentApplicationLogs.json"
+```
+
+## Removing Unnecessary Packages with PowerShell
+```console
 
 ```
