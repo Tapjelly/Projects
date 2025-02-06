@@ -70,3 +70,8 @@ Using the UI you just add the OU and sub-OU. Add the users and groups. Assign th
 There was a bonus of moving the computer to a new computer OU.
 
 ## Create Group Policy with Group Policy Objects
+This one was just using the UI of Server manager > Tools > Group policy manager. I created a GPO named Limit Settings. The policy was User Configuration > Policies > Administrative Templates > Control Panel called Settings Page Visibility.
+Under Settings Page Visibility, enter showonly:about;themes.
+Then I needed to add the Sales group to the Remote Desktop Users group in the Active Directory Users and Computers menu.
+From here I log in as system admin and gpupdate to update the new policy. 
+When logged in as the user I have limited access to settings.
