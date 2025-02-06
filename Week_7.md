@@ -63,3 +63,10 @@ foreach ($package in $csv) {
 	write-output $package.name removed!
 }
 ```
+# Week 7.2
+## Create Domain OUs, Users, and Groups
+This one was just using the UI of Server manager > Tools > Active Directory Users and Computers. Because it was so straight forward I am not posting images or a walkthrough.
+Using the UI you just add the OU and sub-OU. Add the users and groups. Assign the users to the groups.
+There was a bonus of moving the computer to a new computer OU.
+
+## Create Group Policy with Group Policy Objects
